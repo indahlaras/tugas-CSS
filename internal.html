@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: green;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        #judul {
+            background: yellow;
+        }
+
+        h2, h3 {
+            color: red;
+        }
+        div p {
+            font-style: italic;
+        }
+
+        div > span {
+            color: purple;
+        }
+
+        h1 + p {
+            background: lightblue;
+        }
+
+        h2 ~ p {
+            border: 1px dashed gray;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        input:focus {
+            background: lightyellow;
+        }
+
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+        li:nth-child(2) {
+            background: pink;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: green;
+            color: white;
+        }
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        img[alt] {
+            border: 4px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="judul">Contoh Internal CSS</h1>
+    <p>Paragraf pertama.</p>
+
+    <div class="box">
+        <p>Paragraf dalam div.</p>
+        <span>Span dalam div.</span>
+    </div>
+
+    <h2>Sub Judul</h2>
+    <p>Paragraf setelah h2.</p>
+
+    <h3>Heading 3</h3>
+
+    <a href="#">Link Hover</a>
+
+    <br><br>
+
+    <input type="text" placeholder="Masukkan nama">
+
+    <ul>
+        <li>Satu</li>
+        <li>Dua</li>
+        <li>Tiga</li>
+    </ul>
+
+    <button>Klik Saya</button>
+
+    <br><br>
+
+    <img src="https://via.placeholder.com/100" alt="gambar">
+
+</body>
+</html>
